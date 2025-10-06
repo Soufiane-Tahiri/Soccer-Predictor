@@ -209,41 +209,6 @@ Weighted average of recent match results with exponential decay:
 
 ---
 
-## 🔧 Advanced Configuration
-
-### Custom Model Training
-
-To train models on your own dataset:
-
-```python
-from src.model_trainer import ModelTrainer
-
-trainer = ModelTrainer(data_path='your_data.csv')
-trainer.preprocess_data()
-trainer.train_all_models()
-trainer.save_models('models/')
-```
-
-### Hyperparameter Tuning
-
-Modify model parameters in `src/config.py`:
-
-```python
-RF_PARAMS = {
-    'n_estimators': 200,
-    'max_depth': 15,
-    'min_samples_split': 10
-}
-
-GB_PARAMS = {
-    'n_estimators': 150,
-    'learning_rate': 0.1,
-    'max_depth': 5
-}
-```
-
----
-
 ## ⚠️ Disclaimer
 
 ### Educational Purpose Only
